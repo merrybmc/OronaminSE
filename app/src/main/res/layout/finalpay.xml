@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/PayBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결제"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/PayBack"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/PayLogout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/PayBack"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/PayBack"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/PayMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영화"
+        android:textSize="20dp"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/PayMovieText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주토피아 08:50 ~ 10:38 A열 6번 10,000원"
+        android:layout_below="@id/PayMovie"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/PayMovieText"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/PaySweetShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스위트샵"
+        android:textSize="20dp"
+        android:layout_below="@id/MovieListLine2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/PayPopcorn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="팝콘 : "
+        android:layout_below="@id/PaySweetShop"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/PayPopcornNutty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="고소한맛 1개 6,000원"
+        android:layout_toRightOf="@id/PayPopcorn"
+        android:layout_alignBaseline="@+id/PayPopcorn"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/PayPopcornSweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="달콤한맛 2개 6,500원"
+        android:layout_below="@id/PayPopcornNutty"
+        android:layout_alignRight="@id/PayPopcornNutty"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/PayDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음료 : "
+        android:layout_below="@id/PayPopcorn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/PayDrinkCola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="콜라 2개 6,000원"
+        android:layout_toRightOf="@id/PayDrink"
+        android:layout_alignBaseline="@+id/PayDrink"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/PayDrinkSprite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사이다 1개 3,000원"
+        android:layout_below="@id/PayDrinkCola"
+        android:layout_marginLeft="55dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/PayDrinkSprite"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/PayCoupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="쿠폰"
+        android:layout_below="@id/MovieListLine3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/PayCouponText"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="생일 쿠폰 20% 할인 ( 0개 보유 )"
+        android:layout_below="@+id/PayCoupon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#d6d7d7"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/PayCouponUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용"
+        android:layout_toRightOf="@id/PayCouponText"
+        android:layout_alignBaseline="@+id/PayCouponText"
+        android:layout_marginLeft="80dp"
+        android:background="#c0b1c1"/>
+
+    <TextView
+        android:id="@+id/MovieListLine4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/PayCouponText"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/PayMileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마일리지"
+        android:layout_below="@id/MovieListLine4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/PayMileageText"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text=" 보유중인 포인트 : 1000 P"
+        android:layout_below="@+id/PayMileage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#d6d7d7"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="입력"
+        android:layout_toRightOf="@id/PayMileageText"
+        android:layout_alignBaseline="@+id/PayMileageText"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/PayMileageUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용"
+        android:layout_toRightOf="@id/PayMileageText"
+        android:layout_alignBaseline="@+id/PayMileageText"
+        android:layout_marginLeft="120dp"
+        android:background="#c0b1c1"/>
+
+    <TextView
+        android:id="@+id/MovieListLine5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/PayMileageText"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/PayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결제 금액 : 31,000원"
+        android:layout_below="@+id/MovieListLine5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/PayDiscountMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ·    할인 금액 : 0원"
+        android:layout_toRightOf="@+id/PayText"
+        android:layout_alignBaseline="@+id/PayText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/PayFinalMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 최종 결제 금액 : 31,000원"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/PayText"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="28dp"/>
+
+    <Button
+        android:id="@+id/PayFinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결제하기"
+        android:layout_below="@id/PayFinalMoney"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

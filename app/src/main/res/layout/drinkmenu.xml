@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/DrinkBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음료"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/DrinkBack"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/DrinkLogout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/DrinkBack"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/DrinkBack"
+        android:layout_marginTop="12dp"/>
+
+    <ImageButton
+        android:id="@+id/Drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/drink"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="12dp"
+        android:background="@null"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioGroup
+        android:id="@+id/DrinkRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/Drink"
+        android:layout_marginTop="80dp">
+
+        <RadioButton
+            android:id="@+id/DrinkCola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="콜라                          3,000원"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioButton
+            android:id="@+id/DrinkSprite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사이다                       3,000원"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/DrinkAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수량  "
+        android:layout_below="@id/DrinkRadio"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/DrinkAmountLeft"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="◀"
+        android:layout_toRightOf="@+id/DrinkAmountText"
+        android:background="#fefcf9"
+        android:layout_marginTop="545dp"/>
+
+    <TextView
+        android:id="@+id/DrinkAmountNumber"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50dp"
+        android:layout_toRightOf="@id/DrinkAmountLeft"
+        android:layout_marginTop="537dp"
+        android:layout_marginLeft="20dp"
+        android:background="#fefcf9"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/DrinkAmountRight"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="▶"
+        android:layout_toRightOf="@+id/DrinkAmountNumber"
+        android:background="#fefcf9"
+        android:layout_marginTop="545dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/DrinkBasket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="장바구니 담기"
+        android:textSize="40dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+

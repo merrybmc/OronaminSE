@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/ReceiptBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영수증"
+        android:textSize="40dp"
+        android:layout_marginTop="9dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/ReceiptLogout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/ReceiptBack"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/ReceiptBack"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/ReceiptMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영화"
+        android:textSize="20dp"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ReceiptMovieText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주토피아 08:50 ~ 10:38 A열 6번 10,000원"
+        android:layout_below="@id/ReceiptMovie"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/MovieListLine2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/ReceiptMovieText"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/ReceiptSweetShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스위트샵"
+        android:textSize="20dp"
+        android:layout_below="@id/MovieListLine2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ReceiptPopcorn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="팝콘"
+        android:layout_below="@id/ReceiptSweetShop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ReceiptPopcornNutty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="고소한맛 1개 6,000원"
+        android:layout_below="@id/ReceiptPopcorn"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ReceiptPopcornSweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="달콤한맛 2개 6,500원"
+        android:layout_below="@id/ReceiptPopcornNutty"
+        android:layout_alignRight="@id/ReceiptPopcornNutty"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ReceiptDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음료"
+        android:layout_below="@id/ReceiptPopcorn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ReceiptDrinkCola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="콜라 2개 6,000원"
+        android:layout_below="@id/ReceiptDrink"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ReceiptDrinkSprite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사이다 1개 3,000원"
+        android:layout_below="@id/ReceiptDrinkCola"
+        android:layout_marginLeft="55dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/MovieListLine3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/ReceiptDrinkSprite"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/ReceiptCoupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="쿠폰"
+        android:layout_below="@id/MovieListLine3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ReceiptCouponText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미사용"
+        android:layout_below="@+id/ReceiptCoupon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/MovieListLine4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/ReceiptCouponText"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/ReceiptMileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마일리지"
+        android:layout_below="@id/MovieListLine4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ReceiptMileageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000 포인트 사용"
+        android:layout_below="@+id/ReceiptMileage"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/MovieListLine5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/ReceiptMileageText"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/ReceiptText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결제 금액 : 31,000원"
+        android:layout_below="@+id/MovieListLine5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/ReceiptDiscountMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="할인 금액 : 0원"
+        android:layout_below="@id/ReceiptText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/ReceiptFinalMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 최종 결제 금액 : 31,000원"
+        android:layout_below="@id/ReceiptDiscountMoney"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/MovieListLine6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/ReceiptFinalMoney"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/ReceiptNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000000-000000000-0000-0000"
+        android:layout_below="@+id/ReceiptFinalMoney"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/ReceiptCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결제 취소"
+        android:layout_below="@id/ReceiptNumber"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a0c5db">
+
+    <ImageView
+        android:id="@+id/LoginLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="800px"
+        android:src="@drawable/logo"
+        android:padding="-50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"/>
+
+    <ImageView
+        android:id="@+id/LoginId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginid"
+        android:layout_below="@+id/LoginLogo"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/LoginIdEdit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginLogo"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="15dp"
+        android:background="@null" />
+
+    <ImageView
+        android:id="@+id/LoginPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginpw"
+        android:layout_below="@+id/LoginId"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/LoginPwEdit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginId"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="15dp"
+        android:background="@null" />
+
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:layout_below="@+id/LoginPwEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="-17dp"
+        android:background="#ff243e"/>
+
+    <Button
+        android:id="@+id/JoinMeber"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:layout_alignLeft="@+id/NonLoginText"
+        android:layout_alignBaseline="@+id/NonLogin"
+        android:layout_marginLeft="-70dp"
+        android:background="@null"/>
+
+     <Button
+        android:id="@+id/NonLogin"
+        android:layout_width="250px"
+        android:layout_height="100px"
+        android:text="비회원 로그인"
+        android:layout_below="@+id/LoginPwEdit"
+        android:layout_alignRight="@+id/LoginPwEdit"
+        android:layout_marginRight="-23dp"
+        android:layout_marginTop="70dp"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/NonLoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" | "
+        android:layout_alignLeft="@id/NonLogin"
+        android:layout_alignBaseline="@+id/NonLogin"
+        android:layout_marginLeft="-10dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+<ImageButton
+    android:id="@+id/ZootopiatimeBack"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/back"
+    android:layout_marginTop="10dp"/>
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="시간 선택"
+android:textSize="40dp"
+android:layout_toRightOf="@id/ZootopiatimeBack"
+android:layout_marginTop="9dp"/>
+
+<Button
+android:id="@+id/ZootopiatimeLogout"
+android:layout_width="70dp"
+android:layout_height="30dp"
+android:text="로그아웃"
+android:textSize="15dp"
+android:background="#eff2f2"
+android:layout_toRightOf="@id/ZootopiatimeBack"
+android:layout_marginTop="20dp"
+android:layout_marginLeft="270dp"/>
+
+<TextView
+android:id="@+id/MovieListLine1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#000000"
+android:textSize="1dp"
+android:layout_below="@+id/ZootopiatimeBack"
+android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/ZootopiatimeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zootopia"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/ZootopiatimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주토피아 "
+        android:textSize="40dp"
+        android:layout_toRightOf="@+id/ZootopiatimeImg"
+        android:layout_alignTop="@+id/ZootopiatimeImg"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:src="@drawable/all"
+        android:layout_toRightOf="@+id/ZootopiatimeText"
+        android:layout_alignTop="@+id/ZootopiatimeText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="애니메이션 | 미국 | 108분 "
+        android:textSize="20dp"
+        android:layout_below="@+id/ZootopiatimeText"
+        android:layout_alignLeft="@+id/ZootopiatimeText"/>
+
+    <Button
+        android:id="@+id/Zoo0850"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08:50"
+        android:background="#ffffff"
+        android:layout_below="@+id/ZootopiatimeImg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/20석"
+        android:layout_below="@+id/Zoo0850"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Zoo1010"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:10"
+        android:background="#ffffff"
+        android:layout_below="@+id/Zoo0850"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/20석"
+        android:layout_below="@+id/Zoo1010"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Zoo1230"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:30"
+        android:background="#ffffff"
+        android:layout_below="@+id/Zoo1010"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/20석"
+        android:layout_below="@+id/Zoo1230"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

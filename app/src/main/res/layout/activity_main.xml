@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#d6d7d7">
+
+
+    <VideoView
+        android:id="@+id/MainVideo"
+        android:layout_width="1080px"
+        android:layout_height="650px"/>
+
+    <Button
+        android:id="@+id/MainLogout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:layout_below="@id/MainVideo"
+        android:background="#eff2f2"
+        android:layout_alignRight="@+id/MainVideo"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:id="@+id/MainReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main1"
+        android:layout_below="@+id/MainVideo"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp" />
+
+    <ImageButton
+        android:id="@+id/MainStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main2"
+        android:layout_below="@+id/MainVideo"
+        android:layout_toRightOf="@+id/MainReservation"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageButton
+        android:id="@+id/MainRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main3"
+        android:layout_below="@+id/MainVideo"
+        android:layout_toRightOf="@+id/MainStore"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="650px"
+        android:src="@drawable/mainposter"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

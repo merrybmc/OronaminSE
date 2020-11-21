@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/TicketInfoBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예매 정보"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/TicketInfoBack"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/TicketInfoBackLogout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/TicketInfoBack"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/TicketInfoBack"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/TicketInfoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zootopia"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/TicketInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영화제목 : "
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/TicketInfoImg"
+        android:layout_alignTop="@+id/TicketInfoImg"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="85px"
+        android:layout_height="85px"
+        android:src="@drawable/twelve"
+        android:layout_toRightOf="@+id/TicketInfoText"
+        android:layout_alignTop="@+id/TicketInfoText"/>
+
+    <TextView
+        android:id="@+id/TicketInfoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관람시간 : "
+        android:textSize="18dp"
+        android:layout_below="@+id/TicketInfoText"
+        android:layout_alignLeft="@+id/TicketInfoText"/>
+
+    <TextView
+        android:id="@+id/TicketInfoSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좌석 : "
+        android:textSize="18dp"
+        android:layout_below="@+id/TicketInfoTime"
+        android:layout_alignLeft="@+id/TicketInfoTime"/>
+
+    <TextView
+        android:id="@+id/TicketInfoMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="금액 : "
+        android:textSize="18dp"
+        android:layout_below="@+id/TicketInfoSeat"
+        android:layout_alignLeft="@+id/TicketInfoSeat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[안내] 극장 이용 시 마스크 착용은 필수입니다."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TicketInfoImg"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/TicketInfoWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미착용 시 입장이 제한됩니다."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TicketInfoImg"
+        android:layout_marginTop="70dp"/>
+
+    <Button
+        android:id="@+id/TicketInfoPay"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:text="결제하기"
+        android:layout_below="@+id/TicketInfoWarning"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:background="#fbc7c7"/>
+
+    <Button
+        android:id="@+id/TicketInfoSweet"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:text="스위트샵 메뉴"
+        android:layout_toRightOf="@id/TicketInfoPay"
+        android:layout_marginTop="364dp"
+        android:background="#ffc002"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/MovieListBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영화"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/MovieListBack"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/MovieListLogout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/MovieListBack"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/MovieListBack"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/ScoreSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="· 평점순"
+        android:textSize="20dp"
+        android:layout_below="@+id/MovieListLine1"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="5dp"
+        android:background="@null"/>
+
+    <Button
+        android:id="@+id/RatioSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="· 예매율순"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/ScoreSort"
+        android:layout_alignBaseline="@+id/ScoreSort"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="5dp"
+        android:background="@null"/>
+
+    <Button
+        android:id="@+id/AgeSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="· 관람등급순"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/RatioSort"
+        android:layout_alignBaseline="@+id/RatioSort"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="5dp"
+        android:background="@null"/>
+
+    <Button
+        android:id="@+id/GenreSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장르"
+        android:background="#fdfcf9"
+        android:layout_toRightOf="@id/AgeSort"
+        android:layout_alignBaseline="@+id/AgeSort"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/GenreSort"
+        android:layout_marginTop="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/ZootopiaImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zootopia"
+        android:layout_below="@id/MovieListLine2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/ZootopiaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주토피아 "
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/ZootopiaImg"
+        android:layout_alignTop="@+id/ZootopiaImg"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:src="@drawable/all"
+        android:layout_toRightOf="@+id/ZootopiaText"
+        android:layout_alignTop="@+id/ZootopiaText"/>
+
+    <TextView
+        android:id="@+id/ZootopiaRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="★9.36 · 예매율 18.4% "
+        android:textSize="16dp"
+        android:layout_below="@+id/ZootopiaText"
+        android:layout_alignLeft="@+id/ZootopiaText"/>
+
+    <TextView
+        android:id="@+id/ZootopiaGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장르 : 애니메이션"
+        android:textSize="16dp"
+        android:layout_below="@+id/ZootopiaRating"
+        android:layout_alignLeft="@+id/ZootopiaRating"/>
+
+    <ImageButton
+        android:id="@+id/ZootopiaTicketing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ticketing"
+        android:layout_toRightOf="@+id/ZootopiaImg"
+        android:layout_alignBottom="@+id/ZootopiaImg"
+        android:background="@null"/>
+
+
+    <ImageView
+        android:id="@+id/AvengersImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avengers"
+        android:layout_below="@id/MovieListLine3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/AvengersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어벤져스 : 앤드게임 "
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/AvengersImg"
+        android:layout_alignTop="@+id/AvengersImg"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:src="@drawable/twelve"
+        android:layout_toRightOf="@+id/AvengersText"
+        android:layout_alignTop="@+id/AvengersText"/>
+
+    <TextView
+        android:id="@+id/AvengersRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="★9.50 · 예매율 71.8% "
+        android:textSize="16dp"
+        android:layout_below="@+id/AvengersText"
+        android:layout_alignLeft="@+id/AvengersText"/>
+
+    <TextView
+        android:id="@+id/AvengersGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장르 : 액션"
+        android:textSize="16dp"
+        android:layout_below="@+id/AvengersRating"
+        android:layout_alignLeft="@+id/AvengersRating"/>
+
+    <ImageButton
+        android:id="@+id/AvengersTicketing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ticketing"
+        android:layout_toRightOf="@+id/AvengersImg"
+        android:layout_alignBottom="@+id/AvengersImg"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/MovieListLine4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/AvengersTicketing"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/MovieListLine3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/ZootopiaTicketing"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/WorldnewImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/worldnew"
+        android:layout_below="@id/MovieListLine4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/WorldnewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신세계 "
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/WorldnewImg"
+        android:layout_alignTop="@+id/WorldnewImg"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:src="@drawable/nineteen"
+        android:layout_toRightOf="@+id/WorldnewText"
+        android:layout_alignTop="@+id/WorldnewText"/>
+
+    <TextView
+        android:id="@+id/WorldnewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="★7.22 · 예매율 33.4% "
+        android:textSize="16dp"
+        android:layout_below="@+id/WorldnewText"
+        android:layout_alignLeft="@+id/WorldnewText"/>
+
+    <TextView
+        android:id="@+id/WorldnewGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장르 : 드라마"
+        android:textSize="16dp"
+        android:layout_below="@+id/WorldnewRating"
+        android:layout_alignLeft="@+id/WorldnewRating"/>
+
+    <ImageButton
+        android:id="@+id/WorldnewTicketing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ticketing"
+        android:layout_toRightOf="@+id/WorldnewImg"
+        android:layout_alignBottom="@+id/WorldnewImg"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/MovieListLine5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/WorldnewTicketing"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

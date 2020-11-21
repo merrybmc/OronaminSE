@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/AvengersSeat1340Back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좌석 선택"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/AvengersSeat1340Back"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/AvengersSeat1340Logout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/AvengersSeat1340Back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/AvengersSeat1340Back"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/AvengersSeat1340Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avengers"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/AvengersSeat1340Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어벤져스 : 앤드게임 "
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/AvengersSeat1340Img"
+        android:layout_alignTop="@+id/AvengersSeat1340Img"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="85px"
+        android:layout_height="85px"
+        android:src="@drawable/twelve"
+        android:layout_toRightOf="@+id/AvengersSeat1340Text"
+        android:layout_alignTop="@+id/AvengersSeat1340Text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13시 40분 "
+        android:textSize="20dp"
+        android:layout_below="@+id/AvengersSeat1340Text"
+        android:layout_alignLeft="@+id/AvengersSeat1340Text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333333"
+        android:layout_below="@id/AvengersSeat1340Img"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/Screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen"
+        android:layout_below="@+id/AvengersSeat1340Img"/>
+
+    <Button
+        android:id="@+id/ave1340a01"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A01"
+        android:background="#00aeff"
+        android:layout_below="@id/Screen"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/ave1340a02"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A02"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/ave1340a01"
+        android:layout_alignBaseline="@+id/ave1340a01"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/ave1340a03"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A03"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/ave1340a02"
+        android:layout_alignBaseline="@+id/ave1340a02"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/ave1340a04"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A04"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/ave1340a03"
+        android:layout_alignBaseline="@+id/ave1340a03"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/ave1340a05"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A05"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/ave1340a04"
+        android:layout_alignBaseline="@+id/ave1340a04"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/ave1340a06"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A06"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/ave1340a05"
+        android:layout_alignBaseline="@+id/ave1340a05"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/ave1340choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택"
+        android:background="#f0ff00"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ave1340a03"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/ZootopiaSeat1230Back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좌석 선택"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/ZootopiaSeat1230Back"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/ZootopiaSeat1230Logout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/ZootopiaSeat1230Back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/ZootopiaSeat1230Back"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/ZootopiaSeat1230Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zootopia"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/ZootopiaSeat1230Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주토피아 "
+        android:textSize="40dp"
+        android:layout_toRightOf="@+id/ZootopiaSeat1230Img"
+        android:layout_alignTop="@+id/ZootopiaSeat1230Img"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:src="@drawable/all"
+        android:layout_toRightOf="@+id/ZootopiaSeat1230Text"
+        android:layout_alignTop="@+id/ZootopiaSeat1230Text"/>
+
+    <TextView
+        android:id="@+id/ZootopiaSeat1230Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12시 30분 "
+        android:textSize="20dp"
+        android:layout_below="@+id/ZootopiaSeat1230Text"
+        android:layout_alignLeft="@+id/ZootopiaSeat1230Text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333333"
+        android:layout_below="@id/ZootopiaSeat1230Img"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/Screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen"
+        android:layout_below="@+id/ZootopiaSeat1230Img"/>
+
+    <Button
+        android:id="@+id/zoo1230a01"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A01"
+        android:background="#00aeff"
+        android:layout_below="@id/Screen"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/zoo1230a02"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A02"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/zoo1230a01"
+        android:layout_alignBaseline="@+id/zoo1230a01"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/zoo1230a03"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A03"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/zoo1230a02"
+        android:layout_alignBaseline="@+id/zoo1230a02"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/zoo1230a04"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A04"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/zoo1230a03"
+        android:layout_alignBaseline="@+id/zoo1230a03"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/zoo1230a05"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A05"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/zoo1230a04"
+        android:layout_alignBaseline="@+id/zoo1230a04"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/zoo1230a06"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A06"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/zoo1230a05"
+        android:layout_alignBaseline="@+id/zoo1230a05"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/zoo1230choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택"
+        android:background="#f0ff00"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/zoo1230a03"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>

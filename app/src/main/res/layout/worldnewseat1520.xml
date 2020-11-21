@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/WorldnewSeat1520Back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좌석 선택"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/WorldnewSeat1520Back"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/WorldnewSeat1520Logout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/WorldnewSeat1520Back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/WorldnewSeat1520Back"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/WorldnewSeat1520Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/worldnew"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/WorldnewSeat1520Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신세계"
+        android:textSize="40dp"
+        android:layout_toRightOf="@+id/WorldnewSeat1520Img"
+        android:layout_alignTop="@+id/WorldnewSeat1520Img"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:src="@drawable/nineteen"
+        android:layout_toRightOf="@+id/WorldnewSeat1520Text"
+        android:layout_alignTop="@+id/WorldnewSeat1520Text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15시 20분 "
+        android:textSize="20dp"
+        android:layout_below="@+id/WorldnewSeat1520Text"
+        android:layout_alignLeft="@+id/WorldnewSeat1520Text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333333"
+        android:layout_below="@id/WorldnewSeat1520Img"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/Screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen"
+        android:layout_below="@+id/WorldnewSeat1520Img"/>
+
+    <Button
+        android:id="@+id/wor1520a01"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A01"
+        android:background="#00aeff"
+        android:layout_below="@id/Screen"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/wor1520a02"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A02"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/wor1520a01"
+        android:layout_alignBaseline="@+id/wor1520a01"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/wor1520a03"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A03"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/wor1520a02"
+        android:layout_alignBaseline="@+id/wor1520a02"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/wor1520a04"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A04"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/wor1520a03"
+        android:layout_alignBaseline="@+id/wor1520a03"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/wor1520a05"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A05"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/wor1520a04"
+        android:layout_alignBaseline="@+id/wor1520a04"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/wor1520a06"
+        android:layout_width="129px"
+        android:layout_height="wrap_content"
+        android:text="A06"
+        android:background="#00aeff"
+        android:layout_toRightOf="@id/wor1520a05"
+        android:layout_alignBaseline="@+id/wor1520a05"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/wor1520choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택"
+        android:background="#f0ff00"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/wor1520a03"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>

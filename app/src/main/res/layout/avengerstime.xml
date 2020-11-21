@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/AvengerstimeBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간 선택"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/AvengerstimeBack"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/AvengerstimeLogout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/AvengerstimeBack"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/AvengerstimeBack"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/AvengerstimeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avengers"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/AvengerstimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어벤져스 : 앤드게임 "
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/AvengerstimeImg"
+        android:layout_alignTop="@+id/AvengerstimeImg"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="85px"
+        android:layout_height="85px"
+        android:src="@drawable/twelve"
+        android:layout_toRightOf="@+id/AvengerstimeText"
+        android:layout_alignTop="@+id/AvengerstimeText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="액션 | 미국 | 181분 "
+        android:textSize="20dp"
+        android:layout_below="@+id/AvengerstimeText"
+        android:layout_alignLeft="@+id/AvengerstimeText"/>
+
+    <Button
+        android:id="@+id/Ave1020"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:20"
+        android:background="#ffffff"
+        android:layout_below="@+id/AvengerstimeImg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/20석"
+        android:layout_below="@+id/Ave1020"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Ave1340"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13:40"
+        android:background="#ffffff"
+        android:layout_below="@+id/Ave1020"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/20석"
+        android:layout_below="@+id/Ave1340"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Ave1700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:00"
+        android:background="#ffffff"
+        android:layout_below="@+id/Ave1340"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/20석"
+        android:layout_below="@+id/Ave1700"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

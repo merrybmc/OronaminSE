@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/WorldnewtimeBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간 선택"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/WorldnewtimeBack"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/WorldnewtimeLogout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/WorldnewtimeBack"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/WorldnewtimeBack"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/WorldnewtimeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/worldnew"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/WorldnewtimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신세계"
+        android:textSize="40dp"
+        android:layout_toRightOf="@+id/WorldnewtimeImg"
+        android:layout_alignTop="@+id/WorldnewtimeImg"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:src="@drawable/nineteen"
+        android:layout_toRightOf="@+id/WorldnewtimeText"
+        android:layout_alignTop="@+id/WorldnewtimeText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="드라마 | 한국 | 134분 "
+        android:textSize="20dp"
+        android:layout_below="@+id/WorldnewtimeText"
+        android:layout_alignLeft="@+id/WorldnewtimeText"/>
+
+    <Button
+        android:id="@+id/Wor1250"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:50"
+        android:background="#ffffff"
+        android:layout_below="@+id/WorldnewtimeImg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/20석"
+        android:layout_below="@+id/Wor1250"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Wor1520"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:20"
+        android:background="#ffffff"
+        android:layout_below="@+id/Wor1250"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/20석"
+        android:layout_below="@+id/Wor1520"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Wor1750"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:50"
+        android:background="#ffffff"
+        android:layout_below="@+id/Wor1520"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/20석"
+        android:layout_below="@+id/Wor1750"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

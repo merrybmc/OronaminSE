@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/DetailsBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내역"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/DetailsBack"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/DetailsNonmemberBtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="비회원 조회"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@+id/DetailsLogout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/DetailsLogout"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/DetailsBack"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="170dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/DetailsBack"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/DetailsMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주토피아"
+        android:textSize="20dp"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/DetailsMovieText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08:50 ~ 10:38 A열 6번"
+        android:layout_below="@id/DetailsMovie"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/DetailsReceipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상세보기 ▶"
+        android:layout_toRightOf="@id/DetailsMovieText"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="85dp"/>
+
+
+</RelativeLayout>

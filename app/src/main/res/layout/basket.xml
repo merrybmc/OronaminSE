@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfcf0">
+
+    <ImageButton
+        android:id="@+id/BasketBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장바구니"
+        android:textSize="40dp"
+        android:layout_toRightOf="@id/BasketBack"
+        android:layout_marginTop="9dp"/>
+
+    <Button
+        android:id="@+id/BasketLogout"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="로그아웃"
+        android:textSize="15dp"
+        android:background="#eff2f2"
+        android:layout_toRightOf="@id/BasketBack"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp"
+        android:layout_below="@+id/BasketBack"
+        android:layout_marginTop="12dp"/>
+
+    <ImageView
+        android:id="@+id/BasketPopcornImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/popcorn"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/BasketPopcornNutty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="고소한 맛 1개 6,000원"
+        android:textSize="20dp"
+        android:layout_below="@id/MovieListLine1"
+        android:layout_toRightOf="@id/BasketPopcornImg"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/BasketPopcornSweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="달콤한 맛 2개 13,000원"
+        android:textSize="20dp"
+        android:layout_below="@id/BasketPopcornNutty"
+        android:layout_toRightOf="@id/BasketPopcornImg"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/BasketPopcornImg"
+        android:layout_marginTop="12dp"/>
+
+    <ImageView
+        android:id="@+id/BasketDrinkImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/drink"
+        android:layout_below="@id/MovieListLine2"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/BasketDrinkCola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="콜라 2개 6,000원"
+        android:textSize="20dp"
+        android:layout_below="@id/MovieListLine2"
+        android:layout_toRightOf="@id/BasketDrinkImg"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/BasketDrinkSprite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사이다 1개 3,000원"
+        android:textSize="20dp"
+        android:layout_below="@id/BasketDrinkCola"
+        android:layout_toRightOf="@id/BasketDrinkImg"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/BasketDrinkImg"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/BasketFinalPayMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="총 상품금액 : 28,000원"
+        android:textSize="20dp"
+        android:layout_below="@id/MovieListLine3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/MovieListLine4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6a2a7"
+        android:textSize="1dp"
+        android:layout_below="@+id/BasketFinalPayMoney"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/BasketFinalPay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="결제하기"
+        android:layout_below="@+id/BasketFinalPayMoney"
+        android:layout_marginTop="30dp"
+        android:background="#d6d7d7"/>
+
+</RelativeLayout>
