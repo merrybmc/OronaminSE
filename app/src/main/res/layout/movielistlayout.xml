@@ -95,7 +95,7 @@
 
 
     <ImageView
-        android:id="@+id/ZootopiaImg"
+        android:id="@+id/MovieImg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/zootopia"
@@ -104,52 +104,51 @@
         android:layout_marginLeft="10dp"/>
 
     <TextView
-        android:id="@+id/ZootopiaText"
+        android:id="@+id/MovieText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="주토피아 "
         android:textSize="20dp"
-        android:layout_toRightOf="@+id/ZootopiaImg"
-        android:layout_alignTop="@+id/ZootopiaImg"
+        android:layout_toRightOf="@+id/MovieImg1"
+        android:layout_alignTop="@+id/MovieImg1"
         android:layout_marginLeft="10dp"/>
 
     <ImageView
         android:layout_width="70px"
         android:layout_height="70px"
         android:src="@drawable/all"
-        android:layout_toRightOf="@+id/ZootopiaText"
-        android:layout_alignTop="@+id/ZootopiaText"/>
+        android:layout_toRightOf="@+id/MovieText1"
+        android:layout_alignTop="@+id/MovieText1"/>
 
     <TextView
-        android:id="@+id/ZootopiaRating"
+        android:id="@+id/MovieRating1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="★9.36 · 예매율 18.4% "
         android:textSize="16dp"
-        android:layout_below="@+id/ZootopiaText"
-        android:layout_alignLeft="@+id/ZootopiaText"/>
+        android:layout_below="@+id/MovieText1"
+        android:layout_alignLeft="@+id/MovieText1"/>
 
     <TextView
-        android:id="@+id/ZootopiaGenre"
+        android:id="@+id/MovieGenre1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="장르 : 애니메이션"
         android:textSize="16dp"
-        android:layout_below="@+id/ZootopiaRating"
-        android:layout_alignLeft="@+id/ZootopiaRating"/>
+        android:layout_below="@+id/MovieRating1"
+        android:layout_alignLeft="@+id/MovieRating1"/>
 
     <ImageButton
-        android:id="@+id/ZootopiaTicketing"
+        android:id="@+id/MovieTicketing1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ticketing"
-        android:layout_toRightOf="@+id/ZootopiaImg"
-        android:layout_alignBottom="@+id/ZootopiaImg"
+        android:layout_toRightOf="@+id/MovieImg1"
+        android:layout_alignBottom="@+id/MovieImg1"
         android:background="@null"/>
 
-
     <ImageView
-        android:id="@+id/AvengersImg"
+        android:id="@+id/MovieImg2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/avengers"
@@ -158,47 +157,47 @@
         android:layout_marginLeft="10dp"/>
 
     <TextView
-        android:id="@+id/AvengersText"
+        android:id="@+id/MovieText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="어벤져스 : 앤드게임 "
         android:textSize="20dp"
-        android:layout_toRightOf="@+id/AvengersImg"
-        android:layout_alignTop="@+id/AvengersImg"
+        android:layout_toRightOf="@+id/MovieImg2"
+        android:layout_alignTop="@+id/MovieImg2"
         android:layout_marginLeft="10dp"/>
 
     <ImageView
         android:layout_width="70px"
         android:layout_height="70px"
         android:src="@drawable/twelve"
-        android:layout_toRightOf="@+id/AvengersText"
-        android:layout_alignTop="@+id/AvengersText"/>
+        android:layout_toRightOf="@+id/MovieText2"
+        android:layout_alignTop="@+id/MovieText2"/>
 
     <TextView
-        android:id="@+id/AvengersRating"
+        android:id="@+id/MovieRating2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="★9.50 · 예매율 71.8% "
         android:textSize="16dp"
-        android:layout_below="@+id/AvengersText"
-        android:layout_alignLeft="@+id/AvengersText"/>
+        android:layout_below="@+id/MovieText2"
+        android:layout_alignLeft="@+id/MovieText2"/>
 
     <TextView
-        android:id="@+id/AvengersGenre"
+        android:id="@+id/MovieGenre2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="장르 : 액션"
         android:textSize="16dp"
-        android:layout_below="@+id/AvengersRating"
-        android:layout_alignLeft="@+id/AvengersRating"/>
+        android:layout_below="@+id/MovieRating2"
+        android:layout_alignLeft="@+id/MovieRating2"/>
 
     <ImageButton
-        android:id="@+id/AvengersTicketing"
+        android:id="@+id/MovieTicketing2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ticketing"
-        android:layout_toRightOf="@+id/AvengersImg"
-        android:layout_alignBottom="@+id/AvengersImg"
+        android:layout_toRightOf="@+id/MovieImg2"
+        android:layout_alignBottom="@+id/MovieImg2"
         android:background="@null"/>
 
     <TextView
@@ -207,7 +206,7 @@
         android:layout_height="wrap_content"
         android:background="#c6a2a7"
         android:textSize="1dp"
-        android:layout_below="@+id/AvengersTicketing"
+        android:layout_below="@+id/MovieTicketing2"
         android:layout_marginTop="10dp"/>
     <TextView
         android:id="@+id/MovieListLine3"
@@ -215,11 +214,11 @@
         android:layout_height="wrap_content"
         android:background="#c6a2a7"
         android:textSize="1dp"
-        android:layout_below="@+id/ZootopiaTicketing"
+        android:layout_below="@+id/MovieTicketing1"
         android:layout_marginTop="10dp"/>
 
     <ImageView
-        android:id="@+id/WorldnewImg"
+        android:id="@+id/MovieImg3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/worldnew"
@@ -228,47 +227,47 @@
         android:layout_marginLeft="10dp"/>
 
     <TextView
-        android:id="@+id/WorldnewText"
+        android:id="@+id/MovieText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="신세계 "
         android:textSize="20dp"
-        android:layout_toRightOf="@+id/WorldnewImg"
-        android:layout_alignTop="@+id/WorldnewImg"
+        android:layout_toRightOf="@+id/MovieImg3"
+        android:layout_alignTop="@+id/MovieImg3"
         android:layout_marginLeft="10dp"/>
 
     <ImageView
         android:layout_width="70px"
         android:layout_height="70px"
         android:src="@drawable/nineteen"
-        android:layout_toRightOf="@+id/WorldnewText"
-        android:layout_alignTop="@+id/WorldnewText"/>
+        android:layout_toRightOf="@+id/MovieText3"
+        android:layout_alignTop="@+id/MovieText3"/>
 
     <TextView
-        android:id="@+id/WorldnewRating"
+        android:id="@+id/MovieRating3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="★7.22 · 예매율 33.4% "
         android:textSize="16dp"
-        android:layout_below="@+id/WorldnewText"
-        android:layout_alignLeft="@+id/WorldnewText"/>
+        android:layout_below="@+id/MovieText3"
+        android:layout_alignLeft="@+id/MovieText3"/>
 
     <TextView
-        android:id="@+id/WorldnewGenre"
+        android:id="@+id/MovieGenre3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="장르 : 드라마"
         android:textSize="16dp"
-        android:layout_below="@+id/WorldnewRating"
-        android:layout_alignLeft="@+id/WorldnewRating"/>
+        android:layout_below="@+id/MovieRating3"
+        android:layout_alignLeft="@+id/MovieRating3"/>
 
     <ImageButton
-        android:id="@+id/WorldnewTicketing"
+        android:id="@+id/MovieTicketing3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ticketing"
-        android:layout_toRightOf="@+id/WorldnewImg"
-        android:layout_alignBottom="@+id/WorldnewImg"
+        android:layout_toRightOf="@+id/MovieImg3"
+        android:layout_alignBottom="@+id/MovieImg3"
         android:background="@null"/>
 
     <TextView
@@ -277,18 +276,7 @@
         android:layout_height="wrap_content"
         android:background="#c6a2a7"
         android:textSize="1dp"
-        android:layout_below="@+id/WorldnewTicketing"
+        android:layout_below="@+id/MovieTicketing3"
         android:layout_marginTop="10dp"/>
-
-
-
-
-
-
-
-
-
-
-
 
 </RelativeLayout>

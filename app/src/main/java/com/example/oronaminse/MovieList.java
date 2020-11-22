@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MovieList extends AppCompatActivity {
 
     Button genrepopup,movielistlogout,scoresort,ratiosort,agesort;
-    ImageButton back,zootopia,worldnew,avengers;
+    ImageButton back,movieticketing1,movieticketing2,movieticketing3;
     Dialog unsatisfactory;
     Dialog nonmember;
 
@@ -33,9 +33,9 @@ public class MovieList extends AppCompatActivity {
 
 
         back = (ImageButton) findViewById(R.id.MovieListBack);
-        worldnew = (ImageButton) findViewById(R.id.WorldnewTicketing);
-        avengers = (ImageButton) findViewById(R.id.AvengersTicketing);
-        zootopia = (ImageButton) findViewById(R.id.ZootopiaTicketing);
+        movieticketing1 = (ImageButton) findViewById(R.id.MovieTicketing1);
+        movieticketing2 = (ImageButton) findViewById(R.id.MovieTicketing2);
+        movieticketing3 = (ImageButton) findViewById(R.id.MovieTicketing3);
 
         unsatisfactory = new Dialog(MovieList.this);
         unsatisfactory.setContentView(R.layout.movielistunsatisfactorydialog);
@@ -60,7 +60,7 @@ public class MovieList extends AppCompatActivity {
         }); // 메인으로 이동 */
 
 
-        zootopia.setOnClickListener(new View.OnClickListener() { // 주토피아 예매를 클릭하면
+        movieticketing1.setOnClickListener(new View.OnClickListener() { // (MovieTicketing1 첫번째 상단 예매버튼) 클릭하면
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (getApplicationContext(),ZootopiaTime.class); // 이동
@@ -68,7 +68,19 @@ public class MovieList extends AppCompatActivity {
             }
         });
 
-        avengers.setOnClickListener(new View.OnClickListener() { // 어벤져스 예매를 클릭하면
+        /*
+        movieticketing1.setOnClickListener(new View.OnClickListener() { // 어벤져스 예매를 클릭하면
+            @Override
+            public void onClick(View v) { showunsatisfactory(); } // 예매 불가능 대화상자 출력
+        });
+
+        movieticketing1.setOnClickListener(new View.OnClickListener() { // 어벤져스 예매를 클릭하면
+            @Override
+            public void onClick(View v) { shownonmember(); } // 비회원 생년월일 대화상자 출력
+        });
+*/
+
+        movieticketing2.setOnClickListener(new View.OnClickListener() { // (MovieTicketing2 두번째 중단 예매버튼) 클릭하면
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (getApplicationContext(),AvengersTime.class); // 이동
@@ -76,32 +88,32 @@ public class MovieList extends AppCompatActivity {
             }
         });
 /*
-        avengers.setOnClickListener(new View.OnClickListener() { // 어벤져스 예매를 클릭하면
+        movieticketing2.setOnClickListener(new View.OnClickListener() { // 어벤져스 예매를 클릭하면
             @Override
             public void onClick(View v) { showunsatisfactory(); } // 예매 불가능 대화상자 출력
         });
 
-        avengers.setOnClickListener(new View.OnClickListener() { // 어벤져스 예매를 클릭하면
+        movieticketing2.setOnClickListener(new View.OnClickListener() { // 어벤져스 예매를 클릭하면
             @Override
             public void onClick(View v) { shownonmember(); } // 비회원 생년월일 대화상자 출력
         });
 */
 
-        worldnew.setOnClickListener(new View.OnClickListener() { // 신세계 예매를 클릭하면
+        movieticketing3.setOnClickListener(new View.OnClickListener() { // (MovieTicketing3 세번째 하단 예매버튼) 클릭하면
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (getApplicationContext(),WorldnewTime.class); // 이동
+                Intent intent = new Intent (getApplicationContext(),AvengersTime.class); // 이동
                 startActivity(intent);
             }
         });
 /*
-        worldnew.setOnClickListener(new View.OnClickListener() { // 신세계 예매를 클릭하면
+        movieticketing3.setOnClickListener(new View.OnClickListener() { // 신세계 예매를 클릭하면
             @Override
             public void onClick(View v) { showunsatisfactory();
             } // 예매 불가능 대화상자 출력
         });
 
-        worldnew.setOnClickListener(new View.OnClickListener() { // 신세계 예매를 클릭하면
+        movieticketing3.setOnClickListener(new View.OnClickListener() { // 신세계 예매를 클릭하면
             @Override
             public void onClick(View v) { shownonmember(); } // 비회원 생년월일 대화상자 출력
         });
