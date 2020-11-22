@@ -121,13 +121,22 @@
         android:layout_alignTop="@+id/MovieText1"/>
 
     <TextView
-        android:id="@+id/MovieRating1"
+        android:id="@+id/MovieGrade1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="★9.36 · 예매율 18.4% "
+        android:text="★9.36  "
         android:textSize="16dp"
         android:layout_below="@+id/MovieText1"
         android:layout_alignLeft="@+id/MovieText1"/>
+
+    <TextView
+        android:id="@+id/MovieRating1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="· 예매율 18.4% "
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/MovieGrade1"
+        android:layout_alignBaseline="@+id/MovieGrade1"/>
 
     <TextView
         android:id="@+id/MovieGenre1"
@@ -135,8 +144,8 @@
         android:layout_height="wrap_content"
         android:text="장르 : 애니메이션"
         android:textSize="16dp"
-        android:layout_below="@+id/MovieRating1"
-        android:layout_alignLeft="@+id/MovieRating1"/>
+        android:layout_below="@+id/MovieGrade1"
+        android:layout_alignLeft="@+id/MovieGrade1"/>
 
     <ImageButton
         android:id="@+id/MovieTicketing1"
@@ -174,13 +183,24 @@
         android:layout_alignTop="@+id/MovieText2"/>
 
     <TextView
-        android:id="@+id/MovieRating2"
+        android:id="@+id/MovieGrade2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="★9.50 · 예매율 71.8% "
+        android:text="★9.50  "
         android:textSize="16dp"
         android:layout_below="@+id/MovieText2"
         android:layout_alignLeft="@+id/MovieText2"/>
+
+
+    <TextView
+        android:id="@+id/MovieRating2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="· 예매율 71.8%"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/MovieGrade2"
+        android:layout_alignBaseline="@+id/MovieGrade2"/>
+
 
     <TextView
         android:id="@+id/MovieGenre2"
@@ -188,8 +208,8 @@
         android:layout_height="wrap_content"
         android:text="장르 : 액션"
         android:textSize="16dp"
-        android:layout_below="@+id/MovieRating2"
-        android:layout_alignLeft="@+id/MovieRating2"/>
+        android:layout_below="@+id/MovieGrade2"
+        android:layout_alignLeft="@+id/MovieGrade2"/>
 
     <ImageButton
         android:id="@+id/MovieTicketing2"
@@ -244,13 +264,22 @@
         android:layout_alignTop="@+id/MovieText3"/>
 
     <TextView
-        android:id="@+id/MovieRating3"
+        android:id="@+id/MovieGrade3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="★7.22 · 예매율 33.4% "
+        android:text="★7.22  "
         android:textSize="16dp"
         android:layout_below="@+id/MovieText3"
         android:layout_alignLeft="@+id/MovieText3"/>
+
+    <TextView
+        android:id="@+id/MovieRating3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="· 예매율 71.8%"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/MovieGrade3"
+        android:layout_alignBaseline="@+id/MovieGrade3"/>
 
     <TextView
         android:id="@+id/MovieGenre3"
@@ -258,8 +287,8 @@
         android:layout_height="wrap_content"
         android:text="장르 : 드라마"
         android:textSize="16dp"
-        android:layout_below="@+id/MovieRating3"
-        android:layout_alignLeft="@+id/MovieRating3"/>
+        android:layout_below="@+id/MovieGrade3"
+        android:layout_alignLeft="@+id/MovieGrade3"/>
 
     <ImageButton
         android:id="@+id/MovieTicketing3"
