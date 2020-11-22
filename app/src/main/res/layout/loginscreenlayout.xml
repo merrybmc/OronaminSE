@@ -8,7 +8,7 @@
     <ImageView
         android:id="@+id/LoginLogo"
         android:layout_width="wrap_content"
-        android:layout_height="800px"
+        android:layout_height="800px"fhgj
         android:src="@drawable/logo"
         android:padding="-50dp"
         android:layout_gravity="center"
