@@ -17,6 +17,11 @@ public class FinalPay extends AppCompatActivity {
     ImageButton back;
     Button logout, paycouponuse, paymileageuse, payfinal;
 
+    int nutty = ((PopcornMenu)PopcornMenu.context_nutty).popcornTasteNutty;
+    int sweet = ((PopcornMenu)PopcornMenu.context_sweet).popcornTasteSweet;
+    int cola = ((DrinkMenu)DrinkMenu.context_cola).drinkCola;
+    int sprite = ((DrinkMenu)DrinkMenu.context_sprite).drinkSprite;
+    int finalPayment = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +35,7 @@ public class FinalPay extends AppCompatActivity {
         paycouponuse = (Button) findViewById(R.id.PayCouponUse);
         paymileageuse = (Button) findViewById(R.id.PayMileageUse);
 
-
+       finalPayment = nutty*6000 + sweet*6500 + cola*3000 + sprite*3000;
 
         back.setOnClickListener(new View.OnClickListener() { // /* (뒤로가기) 메인으로 이동
             @Override

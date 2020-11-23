@@ -1,6 +1,7 @@
 package com.example.oronaminse;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,10 @@ public class DrinkMenu extends AppCompatActivity {
     TextView drinkamountnumber;
     int count = 0;
 
+    public static Context context_cola;
+    public static Context context_sprite;
+    int drinkCola = 0;
+    int drinkSprite = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +49,9 @@ public class DrinkMenu extends AppCompatActivity {
         findViewById(R.id.DrinkAmountLeft).setOnClickListener(clickListener);
         findViewById(R.id.DrinkAmountRight).setOnClickListener(clickListener);
 
+        context_cola = this;
+        context_sprite = this;
+
         back.setOnClickListener(new View.OnClickListener() { // /* (뒤로가기) 스위트샵로 이동
             @Override
             public void onClick(View v) {
@@ -63,22 +71,21 @@ public class DrinkMenu extends AppCompatActivity {
         drinkbasket.setOnClickListener(new View.OnClickListener() { // /* 스위트샵으로 이동
             @Override
             public void onClick(View v) {
+                DrinkGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
+                    @Override
+                    public void onCheckedChanged(RadioGroup group, int checkedID){
+                        if(checkedID == R.id.DrinkCola){
+                            drinkCola += Integer.parseInt(drinkamountnumber.getText().toString());
+                        }
+                        if(checkedID == R.id.DrinkSprite){
+                            drinkSprite += Integer.parseInt(drinkamountnumber.getText().toString());
+                        }
+                    }
+                });
                 Intent intent = new Intent(getApplicationContext(), SweetShop.class);
                 startActivity(intent);
             }
         }); // 스위트샵으로 이동 */
-
-        DrinkGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if(checkedId == R.id.DrinkCola){ // 고소한 맛 라디오버튼 체크되었을 때
-                    // 원하는 기능 구현
-                }
-                if(checkedId == R.id.DrinkSprite){ // 달콤한 맛 라디오버튼 체크되었을 때
-                    // 원하는 기능 구현
-                }
-            }
-        });
     }
 
     private View.OnClickListener clickListener = new View.OnClickListener() {
