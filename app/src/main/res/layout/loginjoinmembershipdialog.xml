@@ -1,67 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="300dp"
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#f8f8f8">
+    android:background="#f8f8f8"
+    android:orientation="vertical"
+    android:layout_gravity="center">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/joinmembership"/>
 
     <EditText
-        android:id="@+id/JoinMembershipId"
-        android:layout_width="390dp"
+        android:id="@+id/Email_Join"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:hint="ID를 입력하세요."
-        android:textSize="12dp"
-        android:layout_marginTop="46dp"
-        android:layout_marginLeft="15dp"
-        android:background="@null"/>
+        android:hint="이메일 주소"
+        android:textSize="20dp"
+        android:background="#ffffff"/>
 
     <EditText
-        android:id="@+id/JoinMembershipPw"
-        android:layout_width="390dp"
+        android:id="@+id/Pwd_Join"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:hint="비밀번호를 입력하세요."
-        android:textSize="12dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginLeft="15dp"
-        android:background="@null"/>
+        android:hint="비밀번호"
+        android:textSize="20dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"/>
 
     <EditText
-        android:id="@+id/JoinMembershipBirth"
-        android:layout_width="390dp"
+        android:id="@+id/Name_Join"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:hint="생년월일을 입력하세요. ( ex.19990909 )"
-        android:textSize="12dp"
-        android:layout_marginTop="99dp"
-        android:layout_marginLeft="15dp"
-        android:background="@null"/>
+        android:hint="닉네임"
+        android:textSize="20dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/Age_Join"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="생년월일 ('-'제외 ex.19990919)"
+        android:textSize="20dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"/>
 
 
-    <Button
-        android:id="@+id/JoinMembership"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="가입"
-        android:textColor="#ffffff"
-        android:background="#333333"
-        android:layout_marginTop="140dp"
-        android:layout_marginLeft="85dp"/>
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/JoinMembership"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가입"
+            android:textColor="#ffffff"
+            android:background="#333333"
+            android:layout_marginTop="10dp"
+            />
 
-    <Button
-        android:id="@+id/JoinMembershipCancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="취소"
-        android:textColor="#ffffff"
-        android:background="#333333"
-        android:layout_marginTop="140dp"
-        android:layout_toRightOf="@+id/JoinMembership"
-        android:layout_marginLeft="10dp" />
+        <Button
+            android:id="@+id/JoinMembershipCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:textColor="#ffffff"
+            android:background="#333333"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
 
-
-</RelativeLayout>
+</LinearLayout>
