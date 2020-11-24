@@ -15,7 +15,7 @@
         android:layout_marginTop="70dp"/>
 
     <ImageView
-        android:id="@+id/LoginId"
+        android:id="@+id/LoginIdImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/loginid"
@@ -23,16 +23,17 @@
         android:layout_centerHorizontal="true"/>
 
     <EditText
-        android:id="@+id/LoginIdEdit"
+        android:id="@+id/LoginId"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/LoginLogo"
         android:layout_marginLeft="120dp"
         android:layout_marginTop="15dp"
-        android:background="@null" />
+        android:background="@null"
+        android:hint="이메일 주소"/>
 
     <ImageView
-        android:id="@+id/LoginPw"
+        android:id="@+id/LoginPwImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/loginpw"
@@ -41,13 +42,14 @@
         android:layout_centerHorizontal="true"/>
 
     <EditText
-        android:id="@+id/LoginPwEdit"
+        android:id="@+id/LoginPw"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/LoginId"
         android:layout_marginLeft="120dp"
         android:layout_marginTop="15dp"
-        android:background="@null" />
+        android:background="@null"
+        android:hint="비밀번호"/>
 
 
     <Button
@@ -55,7 +57,7 @@
         android:layout_width="263dp"
         android:layout_height="wrap_content"
         android:text="로그인"
-        android:layout_below="@+id/LoginPwEdit"
+        android:layout_below="@+id/LoginPw"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:layout_marginRight="-17dp"
@@ -76,8 +78,8 @@
         android:layout_width="250px"
         android:layout_height="100px"
         android:text="비회원 로그인"
-        android:layout_below="@+id/LoginPwEdit"
-        android:layout_alignRight="@+id/LoginPwEdit"
+        android:layout_below="@+id/LoginPw"
+        android:layout_alignRight="@+id/LoginPw"
         android:layout_marginRight="-23dp"
         android:layout_marginTop="70dp"
         android:background="@null"/>

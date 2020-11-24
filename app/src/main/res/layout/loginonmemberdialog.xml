@@ -1,48 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="300dp"
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#f8f8f8">
+    android:background="#f8f8f8"
+    android:orientation="vertical"
+    android:layout_gravity="center">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/loginonmember"/>
 
     <EditText
-        android:id="@+id/NonMemberPw"
-        android:layout_width="390dp"
+        android:id="@+id/Non_JoinName"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:hint="비밀번호를 입력하세요"
-        android:textSize="12dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginLeft="15dp"
-        android:background="@null"/>
+        android:hint="이름"
+        android:textSize="20dp"
+        android:background="#ffffff"/>
 
-    <Button
-        android:id="@+id/NonMemberLogin"
+    <EditText
+        android:id="@+id/Non_JoinPw"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:textSize="20dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/Non_JoinBirth"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="생년월일 ('-'제외 ex.19990919)"
+        android:textSize="20dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="로그인"
-        android:textColor="#ffffff"
-        android:background="#333333"
-        android:layout_marginTop="58dp"
-        android:layout_marginLeft="85dp"/>
-
-    <Button
-        android:id="@+id/NonMemberLoginCancel"
+        android:text="비회원 로그인 시 예매 및 예매확인 및 취소만 이용가능하며"
+        />
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="취소"
-        android:textColor="#ffffff"
-        android:background="#333333"
-        android:layout_marginTop="58dp"
-        android:layout_toRightOf="@+id/NonMemberLogin"
-        android:layout_marginLeft="10dp" />
+        android:text="기타 할인혜택은 정회원 회원가입 시 이용가능합니다."
+        />
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/JoinNonMembership"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가입"
+            android:textColor="#ffffff"
+            android:background="#333333"
+            android:layout_marginTop="10dp"
+            />
 
+        <Button
+            android:id="@+id/JoinNonMembershipCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:textColor="#ffffff"
+            android:background="#333333"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
