@@ -13,7 +13,9 @@ public class AvengersTime extends AppCompatActivity {
 
     ImageButton back;
     Button logout,t1020,t1340,t1700;
-
+    int check1020=0;
+    int check1340=0;
+    int check1700=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,22 @@ public class AvengersTime extends AppCompatActivity {
         t1340 = (Button) findViewById(R.id.Ave1340);
         t1700 = (Button) findViewById(R.id.Ave1700);
 
+        if(check1020==1) {
+            Intent intent = new Intent(getApplicationContext(), TicketInformation.class);
+            intent.putExtra("check1020", 1);
+            startActivity(intent);
+        }
+
+        if(check1340==1) {
+            Intent intent = new Intent(getApplicationContext(), TicketInformation.class);
+            intent.putExtra("check1340", 1);
+            startActivity(intent);
+        }
+        if(check1700==1) {
+            Intent intent = new Intent(getApplicationContext(), TicketInformation.class);
+            intent.putExtra("check1700", 1);
+            startActivity(intent);
+        }
 
         back.setOnClickListener(new View.OnClickListener() { // /* (뒤로가기) 영화목록으로 이동
             @Override
@@ -45,6 +63,7 @@ public class AvengersTime extends AppCompatActivity {
         t1020.setOnClickListener(new View.OnClickListener() { // /* 좌석선택화면으로 이동
             @Override
             public void onClick(View v) {
+                check1020=1;
                 Intent intent = new Intent (getApplicationContext(),AvengersSeat1020.class);
                 startActivity(intent);
             }
@@ -53,6 +72,7 @@ public class AvengersTime extends AppCompatActivity {
         t1340.setOnClickListener(new View.OnClickListener() { // /* 좌석선택화면으로 이동
             @Override
             public void onClick(View v) {
+                check1340=1;
                 Intent intent = new Intent (getApplicationContext(),AvengersSeat1340.class);
                 startActivity(intent);
             }
@@ -61,6 +81,7 @@ public class AvengersTime extends AppCompatActivity {
         t1700.setOnClickListener(new View.OnClickListener() { // /* 좌석선택화면으로 이동
             @Override
             public void onClick(View v) {
+                check1700=1;
                 Intent intent = new Intent (getApplicationContext(),AvengersSeat1700.class);
                 startActivity(intent);
             }

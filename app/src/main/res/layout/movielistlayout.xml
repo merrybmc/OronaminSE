@@ -98,10 +98,10 @@
         android:id="@+id/MovieImg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/zootopia"
         android:layout_below="@id/MovieListLine2"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/zootopia" />
 
     <TextView
         android:id="@+id/MovieText1"
@@ -114,6 +114,7 @@
         android:layout_marginLeft="10dp"/>
 
     <ImageView
+        android:id="@+id/Movieimg4"
         android:layout_width="70px"
         android:layout_height="70px"
         android:src="@drawable/all"
@@ -160,10 +161,10 @@
         android:id="@+id/MovieImg2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/avengers"
         android:layout_below="@id/MovieListLine3"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/avengers" />
 
     <TextView
         android:id="@+id/MovieText2"
@@ -176,11 +177,14 @@
         android:layout_marginLeft="10dp"/>
 
     <ImageView
+        android:id="@+id/Movieimg5"
         android:layout_width="70px"
         android:layout_height="70px"
-        android:src="@drawable/twelve"
+        android:layout_alignTop="@+id/MovieText2"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="0dp"
         android:layout_toRightOf="@+id/MovieText2"
-        android:layout_alignTop="@+id/MovieText2"/>
+        android:src="@drawable/twelve" />
 
     <TextView
         android:id="@+id/MovieGrade2"
@@ -250,13 +254,15 @@
         android:id="@+id/MovieText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="신세계 "
-        android:textSize="20dp"
-        android:layout_toRightOf="@+id/MovieImg3"
         android:layout_alignTop="@+id/MovieImg3"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/MovieImg3"
+        android:text="신세계 "
+        android:textSize="20dp" />
 
     <ImageView
+        android:id="@+id/Movieimg6"
         android:layout_width="70px"
         android:layout_height="70px"
         android:src="@drawable/nineteen"
