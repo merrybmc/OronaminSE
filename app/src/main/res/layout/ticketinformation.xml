@@ -59,6 +59,7 @@
         android:layout_marginLeft="10dp"/>
 
     <ImageView
+        android:id="@+id/TicketInfoImg4"
         android:layout_width="85px"
         android:layout_height="85px"
         android:src="@drawable/twelve"

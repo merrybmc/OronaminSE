@@ -13,7 +13,9 @@ public class WorldnewTime extends AppCompatActivity {
 
     ImageButton back;
     Button logout,t1250,t1520,t1750;
-
+    int check1250=0;
+    int check1520=0;
+    int check1750=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,25 @@ public class WorldnewTime extends AppCompatActivity {
         t1520 = (Button) findViewById(R.id.Wor1520);
         t1750 = (Button) findViewById(R.id.Wor1750);
 
+        if(check1250==1) {
+            check1250=1;
+            Intent intent = new Intent(getApplicationContext(), TicketInformation.class);
+            intent.putExtra("check1250", 1);
+            startActivity(intent);
+        }
+
+        if(check1520==1) {
+            check1520=1;
+            Intent intent = new Intent(getApplicationContext(), TicketInformation.class);
+            intent.putExtra("check1340", 1);
+            startActivity(intent);
+        }
+        if(check1750==1) {
+            check1750=1;
+            Intent intent = new Intent(getApplicationContext(), TicketInformation.class);
+            intent.putExtra("check1700", 1);
+            startActivity(intent);
+        }
 
         back.setOnClickListener(new View.OnClickListener() { // /* (뒤로가기) 영화목록으로 이동
             @Override

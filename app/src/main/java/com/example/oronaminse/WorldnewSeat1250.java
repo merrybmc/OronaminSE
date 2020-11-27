@@ -13,7 +13,13 @@ public class WorldnewSeat1250 extends AppCompatActivity {
 
     ImageButton back;
     Button logout,choice,A01,A02,A03,A04,A05,A06;
-
+    boolean A1 = false;
+    boolean A2 = false;
+    boolean A3 = false;
+    boolean A4 = false;
+    boolean A5 = false;
+    boolean A6 = false;
+    int movie =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +57,26 @@ public class WorldnewSeat1250 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (getApplicationContext(),TicketInformation.class);
+                intent.putExtra("check1250", 1);
+                if(A1==true) {
+                    intent.putExtra("A1", true);
+                }
+                if(A2==true) {
+                    intent.putExtra("A2", true);
+                }
+                if(A3==true) {
+                    intent.putExtra("A3", true);
+                }
+                if(A4==true) {
+                    intent.putExtra("A4", true);
+                }
+                if(A5==true) {
+                    intent.putExtra("A5", true);
+                }
+                if(A6==true) {
+                    intent.putExtra("A6", true);
+                }
+                intent.putExtra("movie", 3);
                 startActivity(intent);
             }
         }); // (선택) 예매정보화면으로 이동 */
@@ -64,6 +90,12 @@ public class WorldnewSeat1250 extends AppCompatActivity {
                 A04.setBackgroundResource(R.color.seatnormal);
                 A05.setBackgroundResource(R.color.seatnormal);
                 A06.setBackgroundResource(R.color.seatnormal);
+                A1=true;
+                A2=false;
+                A3=false;
+                A4=false;
+                A5=false;
+                A6=false;
             }
         });
 
@@ -76,6 +108,12 @@ public class WorldnewSeat1250 extends AppCompatActivity {
                 A04.setBackgroundResource(R.color.seatnormal);
                 A05.setBackgroundResource(R.color.seatnormal);
                 A06.setBackgroundResource(R.color.seatnormal);
+                A1=false;
+                A2=true;
+                A3=false;
+                A4=false;
+                A5=false;
+                A6=false;
             }
         });
 
@@ -88,6 +126,12 @@ public class WorldnewSeat1250 extends AppCompatActivity {
                 A04.setBackgroundResource(R.color.seatnormal);
                 A05.setBackgroundResource(R.color.seatnormal);
                 A06.setBackgroundResource(R.color.seatnormal);
+                A1=false;
+                A2=false;
+                A3=true;
+                A4=false;
+                A5=false;
+                A6=false;
             }
         });
 
@@ -100,6 +144,12 @@ public class WorldnewSeat1250 extends AppCompatActivity {
                 A01.setBackgroundResource(R.color.seatnormal);
                 A05.setBackgroundResource(R.color.seatnormal);
                 A06.setBackgroundResource(R.color.seatnormal);
+                A1=false;
+                A2=false;
+                A3=false;
+                A4=true;
+                A5=false;
+                A6=false;
             }
         });
 
@@ -112,6 +162,12 @@ public class WorldnewSeat1250 extends AppCompatActivity {
                 A04.setBackgroundResource(R.color.seatnormal);
                 A01.setBackgroundResource(R.color.seatnormal);
                 A06.setBackgroundResource(R.color.seatnormal);
+                A1=false;
+                A2=false;
+                A3=false;
+                A4=false;
+                A5=true;
+                A6=false;
             }
         });
 
@@ -124,6 +180,12 @@ public class WorldnewSeat1250 extends AppCompatActivity {
                 A04.setBackgroundResource(R.color.seatnormal);
                 A05.setBackgroundResource(R.color.seatnormal);
                 A01.setBackgroundResource(R.color.seatnormal);
+                A1=false;
+                A2=false;
+                A3=false;
+                A4=false;
+                A5=false;
+                A6=true;
             }
         });
     }
