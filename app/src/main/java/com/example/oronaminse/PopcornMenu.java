@@ -1,6 +1,7 @@
 package com.example.oronaminse;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,10 @@ public class PopcornMenu extends AppCompatActivity {
     TextView popcornamountnumber;
     int count = 0;
 
+    public static Context context_nutty;
+    public static Context context_sweet;
+    public int popcornTasteNutty = 0;
+    public int popcornTasteSweet = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +49,10 @@ public class PopcornMenu extends AppCompatActivity {
         findViewById(R.id.PopcornAmountLeft).setOnClickListener(clickListener);
         findViewById(R.id.PopcornAmountRight).setOnClickListener(clickListener);
 
+        context_nutty = this;
+        context_sweet = this;
+
+
         back.setOnClickListener(new View.OnClickListener() { // /* (뒤로가기) 스위트샵로 이동
             @Override
             public void onClick(View v) {
@@ -62,23 +71,24 @@ public class PopcornMenu extends AppCompatActivity {
 
         popcornbasket.setOnClickListener(new View.OnClickListener() { // /* 스위트샵으로 이동
             @Override
-            public void onClick(View v) {
+            public void onClick(View v){
+                PopcornGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(RadioGroup group, int checkedID){
+                        if(checkedID == R.id.PopcornNutty){ // 고소한 맛 라디오버튼 체크되었을 때
+                            // 원하는 기능 구현
+                            popcornTasteNutty += Integer.parseInt(popcornamountnumber.getText().toString());
+                        }
+                        if(checkedID == R.id.PopcornSweet){ // 달콤한 맛 라디오버튼 체크되었을 때
+                            // 원하는 기능 구현
+                            popcornTasteSweet += Integer.parseInt(popcornamountnumber.getText().toString());
+                        }
+                    }
+                });
                 Intent intent = new Intent(getApplicationContext(), SweetShop.class);
                 startActivity(intent);
             }
         }); // 스위트샵으로 이동 */
-
-        PopcornGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if(checkedId == R.id.PopcornNutty){ // 고소한 맛 라디오버튼 체크되었을 때
-                    // 원하는 기능 구현
-                }
-                if(checkedId == R.id.PopcornSweet){ // 달콤한 맛 라디오버튼 체크되었을 때
-                    // 원하는 기능 구현
-                }
-            }
-        });
     }
 
     private View.OnClickListener clickListener = new View.OnClickListener() {
