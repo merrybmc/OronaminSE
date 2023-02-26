@@ -12,3 +12,9 @@ Java, Android Studio
 |         | 김세직
 |        | 이재원
 |        | 이가현
+
+**SRS** <br/>
+https://docs.google.com/spreadsheets/d/16L-YyPLVlDWraccb0yjQpKprh5sXb0OezbDScnlq9C8/edit?usp=sharing
+
+**SDS** <br/>
+https://docs.google.com/document/d/1B1xHjNVZouoFccgvXDMzOORd3ldXrVoQPJwO6GC8Np8/edit?usp=sharing
